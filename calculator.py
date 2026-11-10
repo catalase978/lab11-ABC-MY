@@ -1,6 +1,5 @@
 import math
 
-<<<<<<< HEAD
 def add(a, b):
     return a + b
 
@@ -21,7 +20,7 @@ def log(a, b):
     return math.log(b, a)
 
 def exp(a, b):
-=======
+    return a ** b
 
 def add(a, b): 
     return a + b
