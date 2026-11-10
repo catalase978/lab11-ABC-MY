@@ -1,11 +1,6 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
 import math
 
+<<<<<<< HEAD
 def square_root(a):
     try:
         b = math.sqrt(a)
@@ -22,19 +17,18 @@ def hypotenuse(a,b):
     except:
         pass
 
-# First example
-def add(a, b): 
+def add(a, b):
     return a + b
 
 def subtract(a,b):
     return a - b
 
-def multiply(a,b):
+def mul(a, b):
     return a * b
 
-def divide(a,b):
+def div(a, b):
     if a == 0:
-        raise ZeroDivisionError("Error, cannot divide by zero")
+        raise ZeroDivisionError("Division by zero is not allowed.")
     return b / a
 
 def logarithm(a,b):
@@ -42,6 +36,8 @@ def logarithm(a,b):
         raise ValueError("Value Error with Log")
     return math.log(b, a)
 
-def exponent(a,b):
+def exp(a, b):
     return a ** b
+
+>>>>>>> refs/remotes/origin/main
 
