@@ -38,6 +38,5 @@ def logarithm(a,b):
     return math.log(b, a)
 
 def exponent(a,b):
->>>>>>> 1ddf8ca67a67a3624507041bd05c2ab48f37ce54
     return a ** b
 
