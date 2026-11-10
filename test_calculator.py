@@ -29,11 +29,11 @@ class TestCalculator(unittest.TestCase):
         assert log(2, 8) == 3  
         assert log(10, 100) == 2 
 
-def test_log_invalid_base():
-    with pytest.raises(ValueError):
-        log(0, 10)  
-    with pytest.raises(ValueError):
-        log(1, 10)
+    def test_log_invalid_base():
+        with pytest.raises(ValueError):
+            log(0, 10)  
+        with pytest.raises(ValueError):
+            log(1, 10)
     
     ######## Partner 1
     # def test_log_invalid_argument(self): # 1 assertion
