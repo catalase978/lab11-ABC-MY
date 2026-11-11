@@ -2,20 +2,26 @@ import math
 
 <<<<<<< HEAD
 def square_root(a):
-    try:
-        b = math.sqrt(a)
-        return math.sqrt(b)
-    except:
-        raise ValueError("Cannot take Square Root of a Negative Number")
+    # try:
+    #     b = math.sqrt(a)
+    #     return math.sqrt(b)
+    # except:
+    #     raise ValueError("Cannot take Square Root of a Negative Number")
+    if a < 0:
+        raise ValueError("Numbers must be positive for computing hypotenuse")
+    return math.sqrt(a)
 
 def hypotenuse(a,b):
-    try:
-        c = math.hypot(a,b)
-        if a < 0 or b < 0:
-            raise ValueError("Numbers must be positive for computing hypotenuse")
-        return c
-    except:
-        pass
+    # try:
+    #     c = math.hypot(a,b)
+    #     if a < 0 or b < 0:
+    #         raise ValueError("Numbers must be positive for computing hypotenuse")
+    #     return c
+    # except ValueError error:
+    #     return error
+    if a < 0 or b < 0:
+        raise ValueError("Numbers must be positive for computing hypotenuse")
+    return math.hypot(a,b)
 
 def add(a, b):
     return a + b
